@@ -2,33 +2,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Paiement - Accessoires Téléphone</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Paiement sécurisé</h1>
-    <p>Complétez votre commande</p>
-</header>
-
-<section class="payment-form">
+  </header>
+  <section class="payment-form">
     <form onsubmit="event.preventDefault(); alert('Paiement simulé avec succès ! Merci pour votre commande.'); window.location.href='index.html';">
-        <label>Nom complet<br><input type="text" required></label><br><br>
-        <label>Adresse e-mail<br><input type="email" required></label><br><br>
-        <label>Adresse de livraison<br><input type="text" required></label><br><br>
-        <label>Numéro de carte<br><input type="text" placeholder="1234 5678 9012 3456" required></label><br><br>
-        <label>Date d'expiration<br><input type="text" placeholder="MM/AA" required></label><br><br>
-        <label>Code de sécurité<br><input type="text" placeholder="123" required></label><br><br>
-        <button type="submit">Simuler le paiement</button>
+      <label>Nom sur la carte :</label>
+      <input type="text" required>
+      <label>Numéro de carte :</label>
+      <input type="text" maxlength="16" required>
+      <label>Date d’expiration :</label>
+      <input type="month" required>
+      <label>Code CVV :</label>
+      <input type="text" maxlength="4" required>
+      <button type="submit">Payer</button>
     </form>
-</section>
-
-<footer>
-    <p>&copy; 2025 Accessoires Téléphone</p>
-</footer>
-
+  </section>
 </body>
 </html>

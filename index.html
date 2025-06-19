@@ -2,56 +2,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Accessoires Téléphone - Boutique</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessoires Téléphone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Accessoires Téléphone</h1>
     <p>Les meilleurs gadgets pour votre smartphone</p>
-</header>
+  </header>
 
-<nav>
+  <nav>
     <a href="#">Accueil</a>
     <a href="#">Produits</a>
     <a href="#" onclick="toggleCart()">Panier (<span id="cart-count">0</span>)</a>
-</nav>
+  </nav>
 
-<section class="products">
+  <section class="products">
     <div class="product">
-        <img src="https://images.unsplash.com/photo-1585386959984-a41552262b1c?auto=format&fit=crop&w=400&q=80" alt="Support Voiture">
-        <h3>Support Téléphone Voiture</h3>
-        <p>€14.99</p>
-        <button onclick="addToCart('Support Téléphone Voiture', 14.99)">Ajouter au panier</button>
+      <img src="https://images.unsplash.com/photo-1585386959984-a41552262b1c?auto=format&fit=crop&w=400&q=80" alt="Support Téléphone Voiture">
+      <h3>Support Téléphone Voiture</h3>
+      <p>€14.99</p>
+      <button onclick="addToCart('Support Téléphone Voiture', 14.99)">Ajouter au panier</button>
     </div>
     <div class="product">
-        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=400&q=80" alt="Coque Antichoc">
-        <h3>Coque Antichoc iPhone</h3>
-        <p>€19.99</p>
-        <button onclick="addToCart('Coque Antichoc iPhone', 19.99)">Ajouter au panier</button>
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=400&q=80" alt="Coque Antichoc">
+      <h3>Coque Antichoc iPhone</h3>
+      <p>€19.99</p>
+      <button onclick="addToCart('Coque Antichoc iPhone', 19.99)">Ajouter au panier</button>
     </div>
     <div class="product">
-        <img src="https://images.unsplash.com/photo-1602080858250-c9a5d5b946af?auto=format&fit=crop&w=400&q=80" alt="Câble USB C">
-        <h3>Câble de Chargement USB-C</h3>
-        <p>€9.99</p>
-        <button onclick="addToCart('Câble USB-C', 9.99)">Ajouter au panier</button>
+      <img src="https://images.unsplash.com/photo-1602080858250-c9a5d5b946af?auto=format&fit=crop&w=400&q=80" alt="Câble USB C">
+      <h3>Câble de Chargement USB-C</h3>
+      <p>€9.99</p>
+      <button onclick="addToCart('Câble USB-C', 9.99)">Ajouter au panier</button>
     </div>
-</section>
+  </section>
 
-<section id="cart" style="display:none; padding:20px;">
+  <section id="cart" style="display:none; padding:20px;">
     <h2>Mon Panier</h2>
     <ul id="cart-items"></ul>
     <p>Total : €<span id="cart-total">0.00</span></p>
-    <button onclick="checkout()">Passer la commande</button>
-</section>
+    <a href="paiement.html"><button>Passer la commande</button></a>
+  </section>
 
-<footer>
+  <footer>
     <p>&copy; 2025 Accessoires Téléphone. Tous droits réservés.</p>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
